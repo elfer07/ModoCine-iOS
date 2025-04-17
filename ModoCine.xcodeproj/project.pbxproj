@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDC175BE2DB1310600C6ACF3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EDC175BD2DB130F800C6ACF3 /* README.md */; };
+		EDC175C72DB1814900C6ACF3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EDC175C62DB1814900C6ACF3 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED5788892D9B058E00343D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED5788702D9B058D00343D9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED5788772D9B058D00343D9F;
+			remoteInfo = ModoCine;
+		};
+		ED5788932D9B058E00343D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED5788702D9B058D00343D9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED5788772D9B058D00343D9F;
+			remoteInfo = ModoCine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED5788782D9B058D00343D9F /* ModoCine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModoCine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5788882D9B058E00343D9F /* ModoCineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModoCineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5788922D9B058E00343D9F /* ModoCineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModoCineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC175BD2DB130F800C6ACF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EDC175C62DB1814900C6ACF3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ED57887A2D9B058D00343D9F /* ModoCine */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ModoCine;
+			sourceTree = "<group>";
+		};
+		ED57888B2D9B058E00343D9F /* ModoCineTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ModoCineTests;
+			sourceTree = "<group>";
+		};
+		ED5788952D9B058E00343D9F /* ModoCineUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ModoCineUITests;
+			sourceTree = "<group>";
+		};
+		EDC175BF2DB13D9500C6ACF3 /* screens */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = screens;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED5788752D9B058D00343D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5788852D9B058E00343D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED57888F2D9B058E00343D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED57886F2D9B058D00343D9F = {
+			isa = PBXGroup;
+			children = (
+				EDC175C62DB1814900C6ACF3 /* .gitignore */,
+				EDC175BF2DB13D9500C6ACF3 /* screens */,
+				EDC175BD2DB130F800C6ACF3 /* README.md */,
+				ED57887A2D9B058D00343D9F /* ModoCine */,
+				ED57888B2D9B058E00343D9F /* ModoCineTests */,
+				ED5788952D9B058E00343D9F /* ModoCineUITests */,
+				ED5788792D9B058D00343D9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED5788792D9B058D00343D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED5788782D9B058D00343D9F /* ModoCine.app */,
+				ED5788882D9B058E00343D9F /* ModoCineTests.xctest */,
+				ED5788922D9B058E00343D9F /* ModoCineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED5788772D9B058D00343D9F /* ModoCine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED57889C2D9B058E00343D9F /* Build configuration list for PBXNativeTarget "ModoCine" */;
+			buildPhases = (
+				ED5788742D9B058D00343D9F /* Sources */,
+				ED5788752D9B058D00343D9F /* Frameworks */,
+				ED5788762D9B058D00343D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ED57887A2D9B058D00343D9F /* ModoCine */,
+				EDC175BF2DB13D9500C6ACF3 /* screens */,
+			);
+			name = ModoCine;
+			packageProductDependencies = (
+			);
+			productName = ModoCine;
+			productReference = ED5788782D9B058D00343D9F /* ModoCine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED5788872D9B058E00343D9F /* ModoCineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED57889F2D9B058E00343D9F /* Build configuration list for PBXNativeTarget "ModoCineTests" */;
+			buildPhases = (
+				ED5788842D9B058E00343D9F /* Sources */,
+				ED5788852D9B058E00343D9F /* Frameworks */,
+				ED5788862D9B058E00343D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED57888A2D9B058E00343D9F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ED57888B2D9B058E00343D9F /* ModoCineTests */,
+			);
+			name = ModoCineTests;
+			packageProductDependencies = (
+			);
+			productName = ModoCineTests;
+			productReference = ED5788882D9B058E00343D9F /* ModoCineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED5788912D9B058E00343D9F /* ModoCineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5788A22D9B058E00343D9F /* Build configuration list for PBXNativeTarget "ModoCineUITests" */;
+			buildPhases = (
+				ED57888E2D9B058E00343D9F /* Sources */,
+				ED57888F2D9B058E00343D9F /* Frameworks */,
+				ED5788902D9B058E00343D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED5788942D9B058E00343D9F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ED5788952D9B058E00343D9F /* ModoCineUITests */,
+			);
+			name = ModoCineUITests;
+			packageProductDependencies = (
+			);
+			productName = ModoCineUITests;
+			productReference = ED5788922D9B058E00343D9F /* ModoCineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED5788702D9B058D00343D9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					ED5788772D9B058D00343D9F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					ED5788872D9B058E00343D9F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = ED5788772D9B058D00343D9F;
+					};
+					ED5788912D9B058E00343D9F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = ED5788772D9B058D00343D9F;
+					};
+				};
+			};
+			buildConfigurationList = ED5788732D9B058D00343D9F /* Build configuration list for PBXProject "ModoCine" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED57886F2D9B058D00343D9F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ED5788792D9B058D00343D9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED5788772D9B058D00343D9F /* ModoCine */,
+				ED5788872D9B058E00343D9F /* ModoCineTests */,
+				ED5788912D9B058E00343D9F /* ModoCineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED5788762D9B058D00343D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC175BE2DB1310600C6ACF3 /* README.md in Resources */,
+				EDC175C72DB1814900C6ACF3 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5788862D9B058E00343D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5788902D9B058E00343D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED5788742D9B058D00343D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5788842D9B058E00343D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED57888E2D9B058E00343D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED57888A2D9B058E00343D9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED5788772D9B058D00343D9F /* ModoCine */;
+			targetProxy = ED5788892D9B058E00343D9F /* PBXContainerItemProxy */;
+		};
+		ED5788942D9B058E00343D9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED5788772D9B058D00343D9F /* ModoCine */;
+			targetProxy = ED5788932D9B058E00343D9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ED57889A2D9B058E00343D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED57889B2D9B058E00343D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED57889D2D9B058E00343D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModoCine/Preview Content\"";
+				DEVELOPMENT_TEAM = 9C6D7X83U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ModoCine;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modocine.ModoCine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED57889E2D9B058E00343D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModoCine/Preview Content\"";
+				DEVELOPMENT_TEAM = 9C6D7X83U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ModoCine;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modocine.ModoCine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED5788A02D9B058E00343D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C6D7X83U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modocine.ModoCineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModoCine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ModoCine";
+			};
+			name = Debug;
+		};
+		ED5788A12D9B058E00343D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C6D7X83U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modocine.ModoCineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModoCine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ModoCine";
+			};
+			name = Release;
+		};
+		ED5788A32D9B058E00343D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C6D7X83U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modocine.ModoCineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ModoCine;
+			};
+			name = Debug;
+		};
+		ED5788A42D9B058E00343D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C6D7X83U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modocine.ModoCineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ModoCine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED5788732D9B058D00343D9F /* Build configuration list for PBXProject "ModoCine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED57889A2D9B058E00343D9F /* Debug */,
+				ED57889B2D9B058E00343D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED57889C2D9B058E00343D9F /* Build configuration list for PBXNativeTarget "ModoCine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED57889D2D9B058E00343D9F /* Debug */,
+				ED57889E2D9B058E00343D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED57889F2D9B058E00343D9F /* Build configuration list for PBXNativeTarget "ModoCineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5788A02D9B058E00343D9F /* Debug */,
+				ED5788A12D9B058E00343D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED5788A22D9B058E00343D9F /* Build configuration list for PBXNativeTarget "ModoCineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5788A32D9B058E00343D9F /* Debug */,
+				ED5788A42D9B058E00343D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED5788702D9B058D00343D9F /* Project object */;
+}
