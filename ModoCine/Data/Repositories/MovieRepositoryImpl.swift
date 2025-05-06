@@ -47,4 +47,42 @@ class MovieRepositoryImpl: MovieRepository {
         let actorsDto = try await apiService.getActorsByIdMovie(id: movieId)
         return actorsDto.map { $0.toDomain() }
     }
+    
+    func fetchActorsByIdSeries(id: Int) async throws -> [Actor] {
+        let actorsDto = try await apiService.getActorsByIdSeries(id: id)
+        return actorsDto.map { $0.toDomain() }
+    }
+    
+    func fetchActorById(actorId: Int) async throws -> DetailActor {
+        let actorDetailDto = try await apiService.getActorById(id: actorId)
+        return actorDetailDto.toDomain()
+    }
+    
+    func fetchExternalIds(actorId: Int) async throws -> ExternalIdsActor {
+        let externalIdsDto = try await apiService.getExternalIds(id: actorId)
+        return externalIdsDto.toDomain()
+    }
+    
+    func fetchCastByActorId(actorId: Int) async throws -> [CastCreditsByActor] {
+        let castDto = try await apiService.getCastByActorId(id: actorId)
+        print("cantidad de pelis: \(castDto.count)")
+        return castDto.map { $0.toDomain() }
+    }
+    
+    func fetchSeriesByName(name: String) async throws -> [Series] {
+        let seriesDto = try await apiService.getSeriesByName(name: name)
+        print("cantidad de series: \(seriesDto.count)")
+        return seriesDto.map { $0.toDomain() }
+    }
+    
+    func fetchSeriesDetailById(id: Int) async throws -> SeriesDetail {
+        let seriesDetailDto = try await apiService.getDetailSeriesById(id: id)
+        print("detail series: \(seriesDetailDto)")
+        return seriesDetailDto.toDomain()
+    }
+    
+    func fetchSeasonBySeriesId(id: Int, season: Int) async throws -> SeriesSeason {
+        let seriesSeason = try await apiService.getSeasonBySeriesId(id: id, season: season)
+        return seriesSeason.toDomain()
+    }
 }

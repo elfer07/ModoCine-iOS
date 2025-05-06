@@ -10,6 +10,8 @@ import SwiftUI
 struct PosterActorView: View {
     let imagePath: String?
     let name: String?
+    let characterName: String?
+    var onClick: () -> Void
 
     var body: some View {
         VStack {
@@ -32,6 +34,7 @@ struct PosterActorView: View {
                 .background(Color.white)
                 .cornerRadius(12)
                 .shadow(color: .white, radius: 6)
+                .onTapGesture(perform: onClick)
             } else {
                 Image(systemName: "photo.badge.exclamationmark")
                     .frame(width: 120, height: 170)
@@ -42,6 +45,12 @@ struct PosterActorView: View {
                     .font(.caption)
                     .bold()
                     .padding(.top, 4)
+            }
+            if let characterName = characterName {
+                Text(characterName)
+                    .font(.footnote)
+                    .bold()
+                    .padding(.top, 2)
             }
         }
     }

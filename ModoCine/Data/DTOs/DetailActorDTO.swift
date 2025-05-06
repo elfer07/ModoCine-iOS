@@ -6,35 +6,35 @@
 //
 
 struct DetailActorDTO: Decodable {
-    let also_known_as: [String]
-    let biography: String
+    let also_known_as: [String]?
+    let biography: String?
     let birthday: String?
     let deathday: String?
-    let gender: Int
-    let homepage: String
-    let id: Int
-    let imdb_id: String
-    let known_for_department: String
-    let name: String
-    let place_of_birth: String
-    let popularity: Double
-    let profile_path: String
+    let gender: Int?
+    let homepage: String?
+    let id: Int?
+    let imdb_id: String?
+    let known_for_department: String?
+    let name: String?
+    let place_of_birth: String?
+    let popularity: Double?
+    let profile_path: String?
     
     func toDomain() -> DetailActor {
         return DetailActor(
-            alsoKnownAs: also_known_as,
-            biography: biography,
-            birthday: birthday,
-            deathday: deathday,
-            gender: gender,
-            homepage: homepage,
-            id: id,
-            imdbId: imdb_id,
-            knownForDepartment: known_for_department,
-            name: name,
-            placeOfBirth: place_of_birth,
-            popularity: popularity,
-            profilePath: profile_path
+            alsoKnownAs: also_known_as ?? [],
+            biography: biography ?? "",
+            birthday: birthday ?? "",
+            deathday: deathday ?? "",
+            gender: gender ?? -1,
+            homepage: homepage ?? "",
+            id: id ?? -1,
+            imdbId: imdb_id ?? "",
+            knownForDepartment: known_for_department ?? "",
+            name: name ?? "",
+            placeOfBirth: place_of_birth ?? "",
+            popularity: popularity ?? -1.0,
+            profilePath: profile_path ?? ""
         )
     }
 }
@@ -64,21 +64,39 @@ struct ExternalIdsActorDTO: Decodable {
 }
 
 struct CastCreditsByActorDTO: Decodable {
-    let backdrop_path: String
-    let original_title: String
-    let poster_path: String
+    let poster_path: String?
     let title: String
-    let character: String
     let credit_id: String
     let media_type: String
     
+    enum CodingKeys: String, CodingKey {
+        case poster_path
+        case title
+        case name
+        case credit_id
+        case media_type
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        poster_path = try? container.decodeIfPresent(String.self, forKey: .poster_path)
+        credit_id = try container.decode(String.self, forKey: .credit_id)
+        media_type = try container.decode(String.self, forKey: .media_type)
+        
+        // Trata de obtener primero "title", si no existe, intenta "name"
+        if let titleValue = try? container.decode(String.self, forKey: .title) {
+            title = titleValue
+        } else if let nameValue = try? container.decode(String.self, forKey: .name) {
+            title = nameValue
+        } else {
+            title = "Título desconocido" // o "" si prefieres
+        }
+    }
+    
     func toDomain() -> CastCreditsByActor {
         return CastCreditsByActor(
-            backdropPath: backdrop_path,
-            originalTitle: original_title,
-            posterPath: poster_path,
+            posterPath: poster_path ?? "",
             title: title,
-            character: character,
             creditId: credit_id,
             mediaType: media_type
         )
@@ -86,5 +104,5 @@ struct CastCreditsByActorDTO: Decodable {
 }
 
 struct ListCastByActorDTO: Decodable {
-    let cast: [CastCreditsByActorDTO]
+    let cast: [CastCreditsByActorDTO]?
 }

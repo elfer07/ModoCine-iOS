@@ -23,6 +23,68 @@ func formattedReleaseDate(from dateString: String) -> String {
     }
 }
 
+func formatBirthday(_ birthday: String?, deathday: String?) -> String {
+    guard let birthday = birthday else { return "Fecha desconocida" }
+    
+    let inputFormatter = DateFormatter()
+    inputFormatter.dateFormat = "yyyy-MM-dd"
+    inputFormatter.locale = Locale(identifier: "es_ES")
+    
+    guard let birthDate = inputFormatter.date(from: birthday) else {
+        return "Fecha inválida"
+    }
+    
+    let outputFormatter = DateFormatter()
+    outputFormatter.locale = Locale(identifier: "es_ES")
+    outputFormatter.dateFormat = "d 'de' MMMM 'de' yyyy"
+    
+    let formattedBirthDate = outputFormatter.string(from: birthDate)
+    
+    // Si el actor falleció, en fecha de nacimiento solo mostramos la fecha, sin edad
+    if let deathday = deathday, !deathday.isEmpty {
+        return formattedBirthDate
+    }
+    
+    // Si no falleció, calculamos edad actual
+    let calendar = Calendar.current
+    let now = Date()
+    let ageComponents = calendar.dateComponents([.year], from: birthDate, to: now)
+    let age = ageComponents.year ?? 0
+    
+    let ageText = age == 1 ? "\(age) año" : "\(age) años"
+    
+    return "\(formattedBirthDate) (\(ageText))"
+}
+
+func formatDeathday(_ deathday: String?, birthday: String?) -> String? {
+    guard let deathday = deathday, !deathday.isEmpty else { return nil }
+    guard let birthday = birthday else { return nil }
+    
+    let inputFormatter = DateFormatter()
+    inputFormatter.dateFormat = "yyyy-MM-dd"
+    inputFormatter.locale = Locale(identifier: "es_ES")
+    
+    guard let deathDate = inputFormatter.date(from: deathday),
+          let birthDate = inputFormatter.date(from: birthday) else {
+        return nil
+    }
+    
+    let outputFormatter = DateFormatter()
+    outputFormatter.locale = Locale(identifier: "es_ES")
+    outputFormatter.dateFormat = "d 'de' MMMM 'de' yyyy"
+    
+    let formattedDeathDate = outputFormatter.string(from: deathDate)
+    
+    // Calcular edad al momento de fallecer
+    let calendar = Calendar.current
+    let ageComponents = calendar.dateComponents([.year], from: birthDate, to: deathDate)
+    let ageAtDeath = ageComponents.year ?? 0
+    
+    let ageText = ageAtDeath == 1 ? "\(ageAtDeath) año" : "\(ageAtDeath) años"
+    
+    return "\(formattedDeathDate) (\(ageText))"
+}
+
 func languageTransform(_ code: String) -> String {
     switch code {
     case "aa": return "afar"

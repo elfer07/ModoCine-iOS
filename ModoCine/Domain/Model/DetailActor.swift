@@ -11,7 +11,7 @@ struct DetailActor: Decodable {
     let birthday: String?
     let deathday: String?
     let gender: Int
-    let homepage: String
+    let homepage: String?
     let id: Int
     let imdbId: String
     let knownForDepartment: String
@@ -33,15 +33,12 @@ struct ExternalIdsActor: Decodable {
 }
 
 struct CastCreditsByActor: Decodable {
-    let backdropPath: String
-    let originalTitle: String
-    let posterPath: String
+    let posterPath: String?
     let title: String
-    let character: String
     let creditId: String
     let mediaType: String
 }
 
 struct ListCastByActor: Decodable {
-    let cast: [CastCreditsByActor]
+    let cast: [CastCreditsByActor]?
 }

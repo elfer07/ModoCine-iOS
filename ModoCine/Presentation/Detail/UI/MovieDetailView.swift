@@ -10,6 +10,8 @@ import SwiftUI
 struct MovieDetailView: View {
     let movieId: Int
     @ObservedObject var viewModel: MovieDetailViewModel
+    @ObservedObject var actorViewModel: ActorDetailViewModel
+    @State private var selectedActorId: ActorID? = nil
 
     var body: some View {
         VStack {
@@ -106,7 +108,7 @@ struct MovieDetailView: View {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 LazyHStack {
                                     ForEach(cast, id: \.order) { actor in
-                                        PosterActorView(imagePath: actor.profilePath, name: actor.name)
+                                        PosterActorView(imagePath: actor.profilePath, name: actor.name, characterName: actor.character, onClick: { selectedActorId = ActorID(id: actor.id) })
                                             .padding(.horizontal)
                                     }
                                 }
@@ -148,5 +150,12 @@ struct MovieDetailView: View {
                 await viewModel.fetchSimilarMovies(movieId: movieId)
             }
         }
+        .sheet(item: $selectedActorId, content: { actorId in
+            ActorDetailView(viewModel: actorViewModel, actorId: actorId.id)
+        })
     }
+}
+
+struct ActorID: Identifiable {
+    let id: Int
 }
