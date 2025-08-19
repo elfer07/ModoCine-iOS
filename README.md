@@ -20,7 +20,7 @@ This project follows the Clean Architecture principles to separate concerns and 
 
 ## Get it on App Store
 
-[![Screenshot](appstore.png)](https://apps.apple.com/us/app/modocine/id6744767434)
+[![Screenshot](screens/appstore.png)](https://apps.apple.com/us/app/modocine/id6744767434)
 
 # Support
 
